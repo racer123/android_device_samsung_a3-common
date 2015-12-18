@@ -114,6 +114,10 @@ TARGET_USES_WCNSS_CTRL 		 := true
 WIFI_DRIVER_FW_PATH_AP 		 := "ap"
 WIFI_DRIVER_FW_PATH_STA 	 := "sta"
 WPA_SUPPLICANT_VERSION 		 := VER_0_8_X
+WIFI_DRIVER_MODULE_PATH         := "/system/lib/modules/wlan.ko"
+WIFI_DRIVER_MODULE_NAME         := "wlan"
+WIFI_DRIVER_CONF_FILE := "/system/etc/wifi/WCNSS_qcom_cfg.ini"
+WIFI_DRIVER_DEF_CONF_FILE := $(WIFI_DRIVER_CONF_FILE)
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
