@@ -446,6 +446,7 @@ on post-fs-data
     write /data/.wifiver.info 0
     chown system root /data/.wifiver.info
     chmod 0666 /data/.wifiver.info
+    insmod /system/lib/modules/wlan.ko
 
     mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
