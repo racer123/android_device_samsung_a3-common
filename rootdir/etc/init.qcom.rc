@@ -657,6 +657,11 @@ service sec-sh /system/bin/sh /system/etc/init.sec.boot.sh
     user root
     oneshot
 
+service cm-wifi /system/bin/sh /system/etc/init.wifi.sh
+    class main
+    user root
+    oneshot
+
 on property:crypto.driver.load=1
      insmod /system/lib/modules/qce.ko
      insmod /system/lib/modules/qcedev.ko
